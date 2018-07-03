@@ -132,6 +132,8 @@ cc_library(
         "//tensorflow/core:tensorflow",
         "//tensorflow/contrib/rnn:gru_ops_op_lib",
         "//tensorflow/contrib/rnn:lstm_ops_op_lib",
+        "//tensorflow/contrib/coder:range_coder_ops",
+        "//tensorflow/contrib/coder:pmf_to_cdf_op",
         "//tensorflow/core/kernels:quantization_utils",
     ] + if_not_windows([
         "//tensorflow/core/kernels:remote_fused_graph_rewriter_transform",
