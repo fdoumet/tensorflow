@@ -20,11 +20,7 @@ limitations under the License.
 
 namespace tensorflow {
 
-#ifndef __i386__
 /* ABSL_CONST_INIT */ thread_local int per_thread_max_parallism = 1000000;
-#else
-  int per_thread_max_parallism = 1000000;
-#endif
 
 void SetPerThreadMaxParallelism(int max_parallelism) {
   CHECK_LE(0, max_parallelism);
